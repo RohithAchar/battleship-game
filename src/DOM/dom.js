@@ -64,7 +64,7 @@ export default () => {
                 }else{
                     box.textContent = '.';
                 }
-                if(bot.gameboard.allShipsSunk()){
+                if(user.gameboard.allShipsSunk()){
                     modal('You won', 'You destroyed opponent\'s ships');
                 }
                 setTimeout( () => {
@@ -87,7 +87,7 @@ export default () => {
                             }else{
                                 element.textContent = '.';
                             }
-                            if(user.gameboard.allShipsSunk()){
+                            if(bot.gameboard.allShipsSunk()){
                                 modal('You lost', 'Opponent destroyed all your ships')
                             }
                             break;
@@ -141,7 +141,7 @@ const modal = (winner, sub) => {
     setTimeout( () => {
         modalDiv.classList.add('hide');
         document.getElementById('reset').click();
-    },2000)
+    },3000)
 }
 
 const opponentShipInfo = (ships) => {
