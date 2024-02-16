@@ -33,9 +33,6 @@ export default () => {
 
     opponentShipInfo(user.gameboard.ships);
     playerShipInfo(bot.gameboard.ships);
-
-    console.log(user.gameboard.board);
-    console.log(bot.gameboard.board);
     
 
     const enemyBoard = document.querySelector('#enemy-board');
@@ -75,7 +72,6 @@ export default () => {
                         let col = generateRandomNumber();
                         const res = user.attack(bot.gameboard, row, col);
                         if( res ){
-                            console.log(res);
                             row = row + 10;
                             col = col + 10;
                             let id = String(row) +'-'+ String(col);

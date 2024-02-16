@@ -80,6 +80,8 @@ button{
 .hide{
     display: none;
 }
+
+/* ships info */
 #enemy-ship-info {
     margin-top: 10px;
 }
@@ -88,10 +90,10 @@ button{
 }
 #player-ship-info {
     margin-top: 10px;
-    float: right;
 }
 #player-ship-info > div{
     display: flex;
+    justify-content: end;
 }
 .ships{
     background-color: #fff;
