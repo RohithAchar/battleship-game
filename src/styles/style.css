@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
+*{
+    font-family: "Sixtyfour", sans-serif;
+}
+body{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(129, 129, 129);
+}
+button{
+    width: 100px;
+    height: 40px;
+    margin-top: 15px;
+    border: 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+#start-btn{
+    background-color: rgb(183, 255, 183);
+    transition: background-color 0.2s ease-in-out;
+}
+#start-btn:hover{
+    background-color: rgb(69, 255, 69);
+}
+#reset{
+    background-color: rgb(255, 216, 216);
+    transition: background-color 0.2s ease-in-out;
+}
+#reset:hover{
+    background-color: rgb(255, 67, 67);
+}
+.flex-container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    text-align: center;
+}
+.game-board{
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    border: 1px solid rgb(192, 192, 192);
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.1s ease-in;
+}
+.box{
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgb(168, 168, 168);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+.box:hover{
+    background-color: rgb(226, 226, 226);
+}
+
+/* modal */
+.modal{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(168, 168, 168);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hide{
+    display: none;
+}
+#enemy-ship-info {
+    margin-top: 10px;
+}
+#enemy-ship-info > div{
+    display: flex;
+}
+#player-ship-info {
+    margin-top: 10px;
+    float: right;
+}
+#player-ship-info > div{
+    display: flex;
+}
+.ships{
+    background-color: #fff;
+    height: 25px;
+    width: 25px;
+    border: 1px solid black;
+    margin-top: 5px;
+    margin-left: 5px;
+}
