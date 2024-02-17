@@ -46,14 +46,14 @@ export default () => {
             box.id = `${row} ${col}`;
 
             box.addEventListener('click', () => {
-                enemyBoard.style.backgroundColor = 'rgb(226, 226, 226)';
-                playerBoard.style.backgroundColor = 'rgb(255, 255, 255)';
                 const id = box.id;
                 const arrID = id.split(' ');
                 const x = arrID[0];
                 const y = arrID[1];
                 const result = bot.attack(user.gameboard, x, y);
                 if(result === false) return;
+                enemyBoard.style.backgroundColor = 'rgb(226, 226, 226)';
+                playerBoard.style.backgroundColor = 'rgb(255, 255, 255)';
                 if(result === 'hit'){
                     box.style.color = 'red';
                     box.textContent = 'X';
