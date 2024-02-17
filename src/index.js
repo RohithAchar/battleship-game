@@ -1,5 +1,6 @@
 import dom from './DOM/dom'
 import './styles/style.css'
+import instruction from './DOM/instruction';
 
 const startBtn = document.getElementById('start-btn');
 startBtn.addEventListener('click', () => {
