@@ -150,7 +150,8 @@ const opponentShipInfo = (ships) => {
             const div = document.createElement('div');
             div.classList.add('ships');
             if(colored < ship.hits){
-                div.style.backgroundColor = 'red';
+                div.style.backgroundColor = 'black';
+                div.style.border = '0.2px solid grey';
                 colored++;
             }
             shipWrapper.appendChild(div);
@@ -169,7 +170,8 @@ const playerShipInfo = (ships) => {
             const div = document.createElement('div');
             div.classList.add('ships');
             if(colored < ship.hits){
-                div.style.backgroundColor = 'red';
+                div.style.backgroundColor = 'black';
+                div.style.border = '0.2px solid grey';
                 colored++;
             }
             shipWrapper.appendChild(div);

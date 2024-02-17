@@ -1,8 +1,9 @@
 import dom from './DOM/dom'
 import './styles/style.css'
 import instruction from './DOM/instruction';
-
+dom();
 const startBtn = document.getElementById('start-btn');
+startBtn.style.display = 'none';
 startBtn.addEventListener('click', () => {
     dom();
     startBtn.style.display = 'none';
