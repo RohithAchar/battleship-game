@@ -1,40 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Battleship</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="instruction-modal">
-        <h1>How play</h1>
+      <h1>How play</h1>
     </div>
     <div class="modal hide"></div>
     <div class="flex-container">
-        <div class="container">
-            <h1>Your base</h1>
-            <div id="enemy-board" class="game-board">
-    
-            </div> 
-            <div id="enemy-ship-info">
-                
-            </div>
-        </div>
-        <div class="container">
-            <h1>Enemy base</h1>
-            <div id="player-board" class="game-board">
-    
-            </div>
-            <div id="player-ship-info">
-
-            </div>
-        </div>
+      <div class="container">
+        <h1>You</h1>
+        <div id="enemy-board" class="game-board"></div>
+        <div id="enemy-ship-info"></div>
+      </div>
+      <div class="container">
+        <h1>Opponent</h1>
+        <div id="player-board" class="game-board"></div>
+        <div id="player-ship-info"></div>
+      </div>
     </div>
     <button id="start-btn">Start</button>
     <button id="reset">Reset</button>
     <footer>
-        <p> <span style="color: red;">X</span> means hit</p>
-        <p> . means miss</p>
+      <p><span style="color: red">X</span> means hit</p>
+      <p>. means miss</p>
     </footer>
-</body>
+  </body>
 </html>
