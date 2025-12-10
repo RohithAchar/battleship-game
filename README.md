@@ -2,6 +2,8 @@
 
 A Battleship game built with HTML, CSS, JavaScript, Webpack, and Jest.
 
+![Demo](demo.png)
+
 ## Technologies Used
 
 - HTML
